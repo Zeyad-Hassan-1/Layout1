@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    font-family: Epilogue;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    /* height: 10vh; */
+    min-width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+nav svg {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+a[href="index.html"] {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+li+div {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+header {
+    min-width: 100%;
+    background-color: white;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.6%;
+    flex-wrap: wrap;
+}
+
+.header {
+    max-width: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* padding: 40px 0; */
+}
+
+.header p {
+    color: #2D2D2D;
+}
+
+.header p:nth-child(1) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.header p:nth-child(2) {
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 600;
+}
+
+.header p:nth-child(3) {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+hr {
+    margin: 0 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    min-width: 100%;
+    background-color: white;
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills {
+    min-width: 100%;
+    background-color: white;
+    padding: 180px 140px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skillsP {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.skills img+p {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 3;
+}
+
+.skills p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 65%;
+    color: #2D2D2D;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+.latest-work {
+    min-width: 100%;
+    background-color: white;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.latest-work p:nth-child(1) {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.latest-work>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 67px;
+    justify-content: center;
+}
+
+.latest-work h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.latest-work p {
+    color: #2D2D2D;
+    padding-bottom: 1.5em;
+}
+
+.latest-work>div div {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.clients {
+    min-width: 100%;
+    background-color: white;
+    padding: 100px 100px 150px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.clients>h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+.clients>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    height: 100%;
+    gap: 67px;
+    justify-content: center;
+}
+
+.clients>div>div {
+    border: 1.5px solid #FFD285;
+    background-color: rgba(255, 252, 245, 1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 365px;
+}
+
+.author {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer {
+    min-width: 100%;
+    background-color: white;
+    padding: 70px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+footer div p {
+    color: #2D2D2D;
+}
+
+footer div:nth-child(1) p:nth-child(1) {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+footer div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 360px;
+    gap: 60px;
+}
+
+footer div:nth-child(1) div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+input,
+textarea {
+    padding: 21px 30px;
+}
+
+input[type="submit"] {
+    padding: 25px 82px;
+    max-width: 235px;
+    background-color: #2D2D2D;
+    color: white;
+}
+
+input,
+textarea {
+    background-color: #F3F3F3;
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+footer form .information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 530px;
+    gap: 40px;
+}
+
+.social-icon svg:hover,
+.logo svg:hover {
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 2;
+    /* translate(50%,50%); */
+    transition: 2s;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header {
+        padding: 50px 20px 60px 20px;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .header p:nth-child(2) {
+        font-size: 57px;
+        line-height: normal;
+        font-weight: 600;
+    }
+
+    .header {
+        max-width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 60px 66px;
+        gap: 60px;
+    }
+
+    hr {
+        margin: 66px;
+    }
+
+    .skills {
+        padding: 150px 62px;
+        gap: 125px;
+        justify-content: center;
+    }
+
+    .skills div {
+        max-width: 100%;
+        gap: 56px;
+    }
+
+    .skills img+p {
+        line-height: 42px;
+    }
+
+    .skills p {
+        max-width: 100%;
+        line-height: 27px;
+    }
+
+    .latest-work {
+        padding: 40px 30px;
+    }
+
+    .clients {
+        padding: 60px 30px 90px 30px;
+    }
+
+    footer {
+        padding: 0 30px 70px 30px;
+        gap: 80px;
+    }
+
+    form,
+    input,
+    textarea {
+        min-width: 100%;
+    }
+
+    input[type="submit"] {
+        min-width: 70%;
+    }
+
+    nav ul {
+        visibility: hidden;
+    }
+
+    nav svg {
+        display: block;
+    }
+
+    #Logo {
+        visibility: visible;
+    }
+
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1000px) {
+    .header {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header p:nth-child(2) {
+        font-size: 65px;
+    }
+
+    header {
+        justify-content: center;
+    }
+    .logo{
+        gap: 10px;
+    }
+    .skills img+p {
+        line-height: 42px;
+        /* font-size: 20px; */
+    }
+    .skills{
+        padding: 100px 80px;
+        gap: 20px;
+    }
+    .latest-work{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    hr{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    footer{
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 80px;
+    }
+    .clients{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
